@@ -97,37 +97,65 @@ textarea {
 
 
 html {
-    background-color: #1d242b;;
+    background-color: #1d242b;
+    ;
     height: 100%;
 }
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: .75em;
+    color: #e5e2e2;
     padding: 2em;
     height: 100%;
 }
 
+
+
+footer,
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25em;
+    padding: 2em 15em;
+    margin-top: 30px;
+
+}
+
+footer{
+    background: black;
+    border-top: #787878 solid 1px;
+    font-size: .75em;
+}
+
 .wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     border-radius: 10px;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 .div-1,
 .div-2,
 .div-3 {
     width: 30%;
-    flex-flow: column;
     display: flex;
+    flex-direction: column;
     justify-content: start;
     align-items: left;
     color: #e5e2e2;
     line-height: 1.5em;
-    font-size: 1.6em;
+    font-size: 1em;
     width: 33%;
     height: auto;
     padding: 1em 2em;
+    box-sizing: border-box;
+
+}
+
+h1 {
+    font-size: 3rem;
 }
 
 h2 {
@@ -135,6 +163,7 @@ h2 {
     font-weight: 700;
     text-transform: capitalize;
 }
+
 .div-2 {
     border-left: #e5e2e2 solid 1px;
     border-right: #e5e2e2 solid 1px;
